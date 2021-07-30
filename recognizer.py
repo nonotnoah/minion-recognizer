@@ -1,12 +1,6 @@
-import fastbook
-fastbook.setup_book()
-from fastbook import *
-from fastai.vision.widgets import *
+from fastai.vision.all import *
 
-print(Path())
-# print(path.ls(file_exts='.pkl'))
-
-# learn_inf = load_learner(path/'export.pkl')
+learn_inf = load_learner('C:\\Users\\Noah\\Desktop\\fastai\\minion recognizer\\export.pkl')
 
 
-# print(learn_inf.predict('minions\\cannon\\red\\red_cannon1.jpg'))
+learn_inf.predict('C:\\Users\\Noah\\Desktop\\fastai\\minion recognizer\\minions\\test.png')
